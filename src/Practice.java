@@ -1,6 +1,7 @@
 import javafx.scene.transform.Rotate;
 
 import java.util.Scanner;
+import bitwiseoperators.KthBitSet;
 
 public class Practice {
 
@@ -63,13 +64,41 @@ public class Practice {
 //            LeadersInAnArray.printLeaders(arr);
 
 //          Trap Rain Water
-              int size = sc.nextInt();
-              int[] arr = new int[size];
-              for(int i=0; i<size; i++) {
-                 arr[i] = sc.nextInt();
-              }
-              int unitsOfWaterTrapped = TrapRainWater.waterTrapped(arr);
-              System.out.println("Units Of Water Trapped:" + unitsOfWaterTrapped);
+//              int size = sc.nextInt();
+//              int[] arr = new int[size];
+//              for(int i=0; i<size; i++) {
+//                 arr[i] = sc.nextInt();
+//              }
+//              int unitsOfWaterTrapped = TrapRainWater.waterTrapped(arr);
+//              System.out.println("Units Of Water Trapped:" + unitsOfWaterTrapped);
+
+//            Calculate prefix sum
+//                int size = sc.nextInt();
+//                int[] arr = new int[size];
+//                for(int i=0; i<size; i++) {
+//                    arr[i] = sc.nextInt();
+//                }
+//                int low = sc.nextInt();
+//                int high = sc.nextInt();
+//                PrefixSum.initializeSumArr(arr);
+//                int prefixSum = PrefixSum.findSum(low, high);
+//                System.out.println("The prefix sum is:" + prefixSum);
+
+//            Find equilibrium point
+//                int size = sc.nextInt();
+//                int[] arr = new int[size];
+//                for (int i=0; i<size; i++) {
+//                    arr[i] = sc.nextInt();
+//                }
+//                EquilibriumPointInArray.findPoints(arr);
+
+//        Bit wise operators
+//        ============================
+
+//            Find if bit is set
+              int num = sc.nextInt();
+              int k = sc.nextInt();
+              System.out.println(k+" bit is set: "+KthBitSet.isSet(num, k));
 
     }
 }
