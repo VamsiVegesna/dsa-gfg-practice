@@ -2,6 +2,9 @@ import javafx.scene.transform.Rotate;
 
 import java.util.Scanner;
 import bitwiseoperators.KthBitSet;
+import bitwiseoperators.PowerOf2;
+import bitwiseoperators.NumberOfSetBits;
+import bitwiseoperators.OddOccuranceInArray;
 
 public class Practice {
 
@@ -96,9 +99,24 @@ public class Practice {
 //        ============================
 
 //            Find if bit is set
-              int num = sc.nextInt();
-              int k = sc.nextInt();
-              System.out.println(k+" bit is set: "+KthBitSet.isSet(num, k));
+//              int num = sc.nextInt();
+//              int k = sc.nextInt();
+//              System.out.println(k+" bit is set: "+KthBitSet.isSet(num, k));
 
+//        Find if the given num can be written in powers of 2
+//            int num = sc.nextInt();
+//            System.out.println(PowerOf2.isTrue(num));
+
+//        Find total number of set bits in give number
+//            int num = sc.nextInt();
+//            System.out.println(NumberOfSetBits.count(num));
+
+//        Find the odd occurances in array
+              int size = sc.nextInt();
+              int[] arr = new int[size];
+              for(int i=0; i<size; i++) {
+                  arr[i] = sc.nextInt();
+              }
+              System.out.println(OddOccuranceInArray.findOne(arr));
     }
 }
